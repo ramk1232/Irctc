@@ -22,7 +22,7 @@ public class Utility {
 		FileInputStream file = null;
 		try {
 
-			file = new FileInputStream("C:\\Users\\ramko\\git\\JioMart\\Irctc\\configuration\\config.properties");
+			file = new FileInputStream("C:\\Users\\ramko\\git\\Irctc\\Irctc\\configuration\\config.properties");
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
