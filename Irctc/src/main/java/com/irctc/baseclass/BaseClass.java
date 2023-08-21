@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -27,8 +28,11 @@ public class BaseClass {
 	@BeforeClass
 	public void initializeBrowser() throws IOException {
 
-		System.setProperty(Utility.getDataFromPropertyFile("key"), Utility.getDataFromPropertyFile("value"));
-		driver = new ChromeDriver();
+		System.setProperty(Utility.getDataFromPropertyFile("chrome_key"),
+				Utility.getDataFromPropertyFile("chrome_value"));
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("disable-notifications");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(Utility.getDataFromPropertyFile("url"));
@@ -37,7 +41,7 @@ public class BaseClass {
 
 	@BeforeMethod
 	public void beforemethod() throws IOException, InterruptedException {
-		
+
 	}
 
 	@AfterMethod

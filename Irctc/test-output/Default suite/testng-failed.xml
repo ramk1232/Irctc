@@ -6,10 +6,19 @@
       <class name="com.irctc.testLayer.Irctctest">
         <methods>
           <include name="tearDown"/>
+          <include name="img75YrLogo"/>
           <include name="irctcLogos2"/>
           <include name="beforemethod"/>
           <include name="afterMethod"/>
+          <include name="allCkBoxess"/>
+          <include name="clk2"/>
+          <include name="serh"/>
+          <include name="to"/>
+          <include name="ckBox"/>
+          <include name="dropD"/>
+          <include name="fr"/>
           <include name="initializeBrowser"/>
+          <include name="cl1"/>
         </methods>
       </class> <!-- com.irctc.testLayer.Irctctest -->
     </classes>
