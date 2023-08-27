@@ -18,7 +18,7 @@ import com.irctc.pageLayer.bokingTrinList;
 import com.irctc.utils.Utility;
 
 public class BaseClass {
-
+//Base
 	public static WebDriver driver;
 	Homepage Ir;
 	bokingTrinList bk;
