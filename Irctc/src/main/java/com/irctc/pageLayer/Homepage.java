@@ -19,7 +19,7 @@ public class Homepage extends BaseClass {
 
 //	@FindBy(xpath="//button[@type='submit']")
 //	private WebElement popup;
-	
+	//Sbmitting
 	@FindBy(xpath = "//div[@class='col-xs-12 loginhead hidden-xs']//img")
 	private WebElement logo75Yr;
 
