@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Irctc.Irctctest"/>
+      <class name="com.irctc.baseclass.BaseClass"/>
+      <class name="com.irctc.testLayer.Irctctest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
